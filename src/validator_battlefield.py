@@ -72,16 +72,17 @@ def validate_grid(grid):
         j = 0
 
     if (number_of_ships[0] == 4) & (number_of_ships[1] == 3) & (number_of_ships[2] == 2) & (number_of_ships[3] == 1):
-        print("\nВсе корабли расставлены")
+        pass
+        #print("\nВсе корабли расставлены")
     elif number_of_ships[4] == 1:
-        print("\nНа поле находятся корабли больше 4-х палубного")
+        #print("\nНа поле находятся корабли больше 4-х палубного")
         return False
     else:
-        print("\nНе хватает или много расставленных кораблей! Кораблей на поле:\n"
-              "1-палубных: {},\n2-палубных: {},\n3-палубных: {},\n4-палубных: {}".format(number_of_ships[0],
-                                                                                         number_of_ships[1],
-                                                                                         number_of_ships[2],
-                                                                                         number_of_ships[3]))
+        #print("\nНе хватает или много расставленных кораблей! Кораблей на поле:\n"
+        #      "1-палубных: {},\n2-палубных: {},\n3-палубных: {},\n4-палубных: {}".format(number_of_ships[0],
+        #                                                                                 number_of_ships[1],
+        #                                                                                 number_of_ships[2],
+        #                                                                                 number_of_ships[3]))
         return False
     # цикл для прохода по найденым кораблям
     for num in range(len(ships_coordinates)):

@@ -2,7 +2,6 @@ import unittest
 from src.validator_battlefield import validate_grid
 
 
-
 class TestValidator(unittest.TestCase):
 
     def test_positon_ship_at_the_borders(self):
